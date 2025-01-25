@@ -1,0 +1,9 @@
+{{#each results}}
+    <div class="result-item"> 
+        <div> <b><i>[ {{tags}} ]</i></b> </div>
+        <div> <b>{{name}}</b></div>
+        <div><pre><i>{{text}}</i></pre></div>
+        <div>{{hits}}</div>
+        <div>{{distance}}</div>
+    </div>
+{{/each}}
