@@ -80,7 +80,7 @@ function main() {
 
             // if it hit all words, check if is a perfect match
             if ( hits == words.length ) {
-                if( item.words.indexOf( search_text ) !== -1 ) {
+                if( item.text.toLowerCase().indexOf(search_text) !== -1 ) {
                     item.hits += 10000
                 }
                 results_info.push( item )

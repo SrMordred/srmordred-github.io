@@ -1,7 +1,6 @@
 {{#each results}}
     <div class="result-item"> 
-        <div> <b><i>[ {{tags}} ]</i></b> </div>
-        <div> <b>{{name}}</b></div>
+        <div class="result-name"> <b>{{name}}</b> <i>[ {{tag}} ]</i> </div>
         <div class="result-text" >{{text}}</div>
     </div>
 {{/each}}

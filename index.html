@@ -5,6 +5,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Poe2 PowerSearch</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.cdnfonts.com/css/fontin" rel="stylesheet">
+                
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="levenshtein.js"></script>
     <script src="info.js"></script>
@@ -16,16 +18,32 @@
             display: flex;
             flex-direction: column;
             align-items: left;
-            margin: 0;
+            margin: 0px;
             padding: 20px;
             font-family: Arial, sans-serif;
+            background-color: #121212;
+            max-width: 1200px;
+            margin: auto;
         }
+        input {
+            background-color: #121212;
+            color: white;
+            font-family: 'Fontin SmallCaps';
+            font-size: larger;
+
+        }
+
+        .title {
+            font-family: 'Fontin SmallCaps';
+            color: #F0690D;
+        }
+
         .search-container {
             margin-bottom: 20px;
         }
         .search-bar {
             padding: 10px;
-            width: 300px;
+            width: 500px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
@@ -34,23 +52,30 @@
             border-top: 1px solid #ccc;
             padding-top: 10px;
         }
+        .result-name {
+            font-family: 'Fontin SmallCaps';
+            color: #F0690D;
+        }
         .result-item {
-            padding: 5px 0;
+            padding: 5px 0px 20px 0px;
             border-bottom: 1px solid #eee;
+            font-family: 'Fontin SmallCaps';
+            font-size: larger;
         }
         .result-text {
             word-wrap: break-word;
             white-space: pre-wrap;
             width:800px;
+            color: #8888ff;
         }
     </style>
 
 </head>
 
-<body>
-
+<body>  
+    <h1 class="title" >Poe2 Power Search</h1>
     <div class="search-container">
-        <input id="search" type="text" class="search-bar" placeholder="Search..." autocomplete="off">
+        <input width="500px" id="search" type="text" class="search-bar" placeholder="Search..." autocomplete="off">
     </div>
 
     <div id="results"></div>
